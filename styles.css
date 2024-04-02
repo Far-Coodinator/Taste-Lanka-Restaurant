@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+:root{
+    --tobbar-1:rgb(34, 87, 122);
+    --topbar-2:rgb(56, 163, 165);
+    --button:rgb(87, 204, 153);
+    --hover-effect:rgb(227, 230, 234);
+    --border-bottom:rgba(0, 0, 0 , 0.5);
+    --address-bg-1:rgb(128, 237, 153);
+    --address-bg-2:rgb(199, 249, 204);
+}
+.logo-shop{
+    width: 100%;
+}
+#header{
+    background: linear-gradient(var(--tobbar-1), var(--topbar-2));
+    padding-bottom: 5px;
+}
+#shop-name{
+    text-align: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+}
+ul li{
+    margin: 8px;
+}
+ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--tobbar-1);
+    background-color: var(--button);
+    border-radius: 10px;
+    padding: 5px;
+}
+ul li a:hover{
+    color: whitesmoke;
+    background-color: rgba(0,0, 0,0.1);
+}
+
+/* .divider{
+    border-bottom: 2px solid var(--border-bottom);
+    width: 80%;
+    
+} */
+#main , #header , #address ,#footer{
+    width: auto;
+    min-width: 350px;
+    max-width: 600px;
+    margin: auto;
+}
+.t-h{
+    font-size: 1.4em;
+    text-align: center;
+    margin:15px 0;
+}
+table{
+    width: 100%;
+}
+
+
+/* tr:nth-child(even){
+    background-color: var(--border-bottom);
+} */
+
+
+.items td{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4px 0 2px ;
+    /* border-bottom: 2px solid rgba(0, 0, 0 , 0.5); */
+    padding: 2px;
+    
+}
+table .items:hover{
+    background-color: var(--hover-effect);
+}
+
+#location{
+    border-bottom: 3px solid var(--border-bottom);
+    margin-top: 25px;
+}
+#address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(var(--address-bg-1), var(--address-bg-2));
+    padding: 15px 0;
+}
+
+#address i{
+    color: var(--tobbar-1);
+}
+#footer{
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#version-d p{
+    font-size: 0.7em;
+    text-align: center;
+    color: rgb(111, 98, 98);
+
+}
