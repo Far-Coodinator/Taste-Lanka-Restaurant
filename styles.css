@@ -59,7 +59,7 @@ ul li a:hover{
     width: 80%;
     
 } */
-#main  , #address ,#footer{
+#main ,#address ,#footer{
     width: auto;
     min-width: 350px;
     max-width: 600px;
