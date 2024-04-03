@@ -120,4 +120,6 @@ table .items:hover{
     color: rgb(111, 98, 98);
 
 }
-
+.price{
+    font-weight:bolder;
+}
